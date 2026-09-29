@@ -1,0 +1,19 @@
+# La pagina pubblica di IApet — https://rvisc.github.io/iapet/
+#
+# Tre righe, come quella di EasyJobCall, e per le stesse ragioni.
+
+# Il tema Primer disegna un'intestazione sua sopra il contenuto, ma **solo quando il titolo del
+# sito è diverso da quello della pagina**. Senza questo file il titolo del sito è il nome del
+# repository — «iapet», minuscolo — mentre quello della pagina viene dal README, «IApet»: diversi
+# per le maiuscole, quindi le intestazioni diventerebbero due. Scritto uguale, ne resta una.
+title: IApet
+
+# Finisce nel <meta name="description"> e, con il tema Primer, anche nel titolo della scheda del
+# browser dopo una barra verticale: tenuta corta, come il sottotitolo del prodotto. In inglese,
+# perché è la riga che un motore di ricerca mostra a chiunque.
+description: A curious companion living on your desktop
+
+# Il tema che GitHub Pages usa di suo, scritto per **bloccarlo**: il giorno in cui il tema
+# predefinito cambia, questa pagina resta com'è. Il suo indirizzo sta nella scheda del negozio e
+# nel campo dell'informativa privacy.
+theme: jekyll-theme-primer

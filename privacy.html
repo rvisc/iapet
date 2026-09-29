@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IApet — Privacy</title>
+<!--
+  GENERATA da tools/make-page.py: non modificare a mano.
+  La fonte sono i sei setup/documenti/privacy.*.txt, cioe' gli stessi testi che viaggiano nel pacchetto.
+  Pagina autonoma, senza fogli di stile esterni ne' tema Jekyll: il suo indirizzo sta
+  nella scheda del Microsoft Store e deve aprirsi anche se il tema del sito non compila.
+-->
+<style>
+  :root {
+    --paper: #f3f8fa; --plate: #fbfdfe; --ink: #16303d; --ink-soft: #3f5b69;
+    --ink-faint: #5a7583; --rule: #d5e7ec; --first: #1f7f8c; --navy: #16303d;
+    --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0b1e2b; --plate: #12303f; --ink: #eef7f9; --ink-soft: #b7d3dc;
+      --ink-faint: #8fb0bb; --rule: #24506a; --first: #7fe3d6; --navy: #dff6f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--paper); color: var(--ink);
+         font-family: var(--sans); font-size: 1rem; line-height: 1.65; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0; color: var(--navy); letter-spacing: .01em; }
+  nav { margin: 1.25rem 0 0; padding: .9rem 0; border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule); }
+  nav a { color: var(--first); text-decoration: none; margin-right: 1.1rem; display: inline-block; padding: .15rem 0; }
+  nav a:hover { text-decoration: underline; }
+  section { margin: 3rem 0 0; padding: 1.75rem 1.75rem .5rem; background: var(--plate);
+            border: 1px solid var(--rule); border-radius: .75rem; }
+  h2 { font-size: 1.15rem; margin: 0; color: var(--navy); letter-spacing: .03em; }
+  h3 { font-size: .95rem; margin: 2rem 0 .35rem; letter-spacing: .04em; color: var(--ink-soft); }
+  p { margin: .35rem 0 1.1rem; }
+  p.versione { color: var(--ink-faint); margin: .3rem 0 1.6rem; font-size: .95rem; }
+  strong { font-weight: 600; }
+  ul { margin: .35rem 0 1.1rem; padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em; background: var(--paper);
+         border: 1px solid var(--rule); border-radius: .25rem; padding: 0 .25em; }
+  a { color: var(--first); }
+  @media (max-width: 34rem) { section { padding: 1.25rem 1.1rem .25rem; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>IApet — Privacy</h1>
+
+<nav>
+<a href="#it">Italiano</a>
+<a href="#en">English</a>
+<a href="#es">Español</a>
+<a href="#fr">Français</a>
+<a href="#de">Deutsch</a>
+<a href="#zh">中文</a>
+<a href="./">&larr; IApet</a>
+</nav>
+
+<section id="it" lang="it">
+<h2>INFORMATIVA SULLA PRIVACY</h2>
+<p class="versione">IApet — versione 1.0.0</p>
+<p>IApet non raccoglie e non conserva dati personali per conto del Titolare, e non gliene manda nessuno. Non contiene telemetria, non traccia l'uso, non richiede un account, non mostra pubblicità e non comunica con nessun server del Titolare, in nessuna configurazione.</p>
+<h3>CHE COSA ESCE DAL TUO COMPUTER</h3>
+<p>Soltanto due cose, ed entrambe solo quando le chiedi tu:</p>
+<ul>
+<li>Il controllo di una password contro gli elenchi di password rubate. La password non esce: il programma ne calcola l'impronta SHA-1 e manda al servizio Pwned Passwords (api.pwnedpasswords.com) solo i primi 5 caratteri esadecimali, cioè un frammento comune a centinaia di password diverse. Il confronto con le risposte avviene sul tuo computer.</li>
+<li>La misura della velocità della connessione, contro speed.cloudflare.com: si scaricano e si inviano dati di riempimento, senza nessun contenuto tuo e senza identificativi.</li>
+</ul>
+<p>Chi riceve queste richieste vede ciò che vede in ogni richiesta web (l'indirizzo IP della tua connessione e l'ora); a quello che ne fa si applica la sua informativa. I collegamenti del menu Aiuto e della finestra Informazioni aprono pagine web nel tuo browser, solo quando fai clic: il programma non ci aggiunge niente che ti riguardi.</p>
+<h3>CHE COSA RESTA SUL TUO COMPUTER</h3>
+<p>Tutto il resto. Il programma osserva il desktop (i nomi delle icone e la loro posizione), le finestre e i controlli di sicurezza del sistema — avvio automatico, aggiornamenti, rete senza fili, processi — e, solo quando lo chiedi, gli appunti, l'indirizzo della pagina che hai davanti e i file della cartella di lavoro che scegli tu. Quello che impara, i tuoi appunti, le sveglie, le azioni autorizzate e le impostazioni stanno in %LOCALAPPDATA%\IApet (nella versione del Microsoft Store, dentro la cartella del pacchetto); il registro giornaliero resta 14 giorni. Il microfono è spento finché non attivi l'ascolto nel menu, e anche allora si apre solo mentre tieni premuto Ctrl+Alt+V (o il pulsante del microfono nel fumetto); il parlato diventa testo sul tuo computer, e nessun audio viene registrato né inviato. Puoi guardare quello che ha salvato («Memoria &gt; Guarda che cosa ha salvato…»), esportarlo e cancellarlo in qualunque momento.</p>
+<h3>IL MODELLO LINGUISTICO</h3>
+<p>Per conversare IApet usa un modello di intelligenza artificiale che gira in LM Studio, un programma di terzi che scegli e installi tu. Di norma sta sullo stesso computer, e allora le domande, il contesto (per esempio i nomi delle icone o i passaggi dei documenti che gli chiedi di leggere) e le risposte non escono dalla macchina. Se scegli di usare un modello su un altro computer della tua rete, questi testi viaggiano verso quel computer, che è tuo: il programma non li manda altrove. A quello che fa LM Studio si applicano le sue condizioni.</p>
+<h3>ACQUISTO DAL MICROSOFT STORE</h3>
+<p>Se hai acquistato IApet dal Microsoft Store, i dati dell'acquisto e del pagamento li tratta Microsoft secondo la propria informativa. Il Titolare non li riceve.</p>
+<h3>COMPONENTI DI TERZI</h3>
+<p>Il programma include il runtime Microsoft .NET, il runtime Microsoft Visual C++, whisper.cpp con il modello Whisper per il parlato e altre librerie, i cui testi di licenza viaggiano insieme al programma nella cartella «licenze». Nessuno di questi componenti introduce telemetria in questo prodotto.</p>
+<h3>TITOLARE E CONTATTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="en" lang="en">
+<h2>PRIVACY POLICY</h2>
+<p class="versione">IApet — version 1.0.0</p>
+<p>IApet does not collect or keep personal data on behalf of the Controller, and sends none to it. It contains no telemetry, does not track usage, requires no account, shows no advertising and does not communicate with any server of the Controller, in any configuration.</p>
+<h3>WHAT LEAVES YOUR COMPUTER</h3>
+<p>Only two things, and both only when you ask for them:</p>
+<ul>
+<li>Checking a password against lists of stolen passwords. The password does not leave: the program computes its SHA-1 fingerprint and sends the Pwned Passwords service (api.pwnedpasswords.com) only the first 5 hexadecimal characters, a fragment shared by hundreds of different passwords. The comparison with the answers happens on your computer.</li>
+<li>Measuring your connection speed against speed.cloudflare.com: filler data is downloaded and uploaded, with none of your content and no identifiers.</li>
+</ul>
+<p>Whoever receives these requests sees what they see in any web request (your connection's IP address and the time); their own privacy policy applies to what they do with it. The links in the Help menu and in the About window open web pages in your browser, only when you click them: the program adds nothing about you to them.</p>
+<h3>WHAT STAYS ON YOUR COMPUTER</h3>
+<p>Everything else. The program observes the desktop (icon names and positions), the windows and the system's security settings — startup programs, updates, wireless network, processes — and, only when you ask, the clipboard, the address of the page in front of you and the files in the working folder you choose. What it learns, your notes, alarms, authorised actions and settings are kept in %LOCALAPPDATA%\IApet (in the Microsoft Store version, inside the package folder); the daily log is kept for 14 days. The microphone is off until you turn listening on in the menu, and even then it opens only while you hold Ctrl+Alt+V (or the microphone button in the speech bubble); speech is turned into text on your computer, and no audio is recorded or sent. You can look at what it has saved ("Memory &gt; See what it has saved…"), export it and delete it at any time.</p>
+<h3>THE LANGUAGE MODEL</h3>
+<p>To converse, IApet uses an artificial intelligence model running in LM Studio, a third-party program that you choose and install. It normally runs on the same computer, and then questions, context (for example icon names, or passages of documents you ask it to read) and answers do not leave the machine. If you choose to use a model on another computer on your network, these texts travel to that computer, which is yours: the program sends them nowhere else. LM Studio's own terms apply to what LM Studio does.</p>
+<h3>PURCHASE FROM THE MICROSOFT STORE</h3>
+<p>If you bought IApet from the Microsoft Store, purchase and payment data are processed by Microsoft under its own privacy policy. The Controller does not receive them.</p>
+<h3>THIRD-PARTY COMPONENTS</h3>
+<p>The program includes the Microsoft .NET runtime, the Microsoft Visual C++ runtime, whisper.cpp with the Whisper speech model and other libraries, whose license texts travel with the program in the "licenze" folder. None of these components introduces telemetry into this product.</p>
+<h3>CONTROLLER AND CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="es" lang="es">
+<h2>POLÍTICA DE PRIVACIDAD</h2>
+<p class="versione">IApet — versión 1.0.0</p>
+<p>IApet no recoge ni conserva datos personales por cuenta del Responsable, y no le envía ninguno. No contiene telemetría, no rastrea el uso, no requiere una cuenta, no muestra publicidad y no se comunica con ningún servidor del Responsable, en ninguna configuración.</p>
+<h3>QUÉ SALE DE TU ORDENADOR</h3>
+<p>Solo dos cosas, y ambas solo cuando tú las pides:</p>
+<ul>
+<li>La comprobación de una contraseña frente a las listas de contraseñas robadas. La contraseña no sale: el programa calcula su huella SHA-1 y envía al servicio Pwned Passwords (api.pwnedpasswords.com) solo los primeros 5 caracteres hexadecimales, un fragmento común a cientos de contraseñas distintas. La comparación con las respuestas se hace en tu ordenador.</li>
+<li>La medición de la velocidad de la conexión contra speed.cloudflare.com: se descargan y envían datos de relleno, sin ningún contenido tuyo y sin identificadores.</li>
+</ul>
+<p>Quien recibe estas solicitudes ve lo que ve en cualquier solicitud web (la dirección IP de tu conexión y la hora); a lo que haga con ello se aplica su propia política de privacidad. Los enlaces del menú Ayuda y de la ventana Acerca de abren páginas web en tu navegador, solo cuando haces clic: el programa no les añade nada que te concierna.</p>
+<h3>QUÉ SE QUEDA EN TU ORDENADOR</h3>
+<p>Todo lo demás. El programa observa el escritorio (los nombres y la posición de los iconos), las ventanas y los ajustes de seguridad del sistema — inicio automático, actualizaciones, red inalámbrica, procesos — y, solo cuando lo pides, el portapapeles, la dirección de la página que tienes delante y los archivos de la carpeta de trabajo que elijas. Lo que aprende, tus notas, las alarmas, las acciones autorizadas y la configuración se guardan en %LOCALAPPDATA%\IApet (en la versión de Microsoft Store, dentro de la carpeta del paquete); el registro diario se conserva 14 días. El micrófono está apagado hasta que activas la escucha en el menú, e incluso entonces solo se abre mientras mantienes pulsado Ctrl+Alt+V (o el botón del micrófono del bocadillo); la voz se convierte en texto en tu ordenador, y ningún audio se graba ni se envía. Puedes ver lo que ha guardado («Memoria &gt; Ver lo que ha guardado…»), exportarlo y borrarlo en cualquier momento.</p>
+<h3>EL MODELO DE LENGUAJE</h3>
+<p>Para conversar, IApet usa un modelo de inteligencia artificial que funciona en LM Studio, un programa de terceros que eliges e instalas tú. Normalmente está en el mismo ordenador, y entonces las preguntas, el contexto (por ejemplo los nombres de los iconos o los fragmentos de los documentos que le pides leer) y las respuestas no salen de la máquina. Si eliges usar un modelo en otro ordenador de tu red, estos textos viajan hasta ese ordenador, que es tuyo: el programa no los envía a ningún otro sitio. A lo que hace LM Studio se aplican sus propias condiciones.</p>
+<h3>COMPRA EN MICROSOFT STORE</h3>
+<p>Si has comprado IApet en Microsoft Store, los datos de la compra y del pago los trata Microsoft según su propia política de privacidad. El Responsable no los recibe.</p>
+<h3>COMPONENTES DE TERCEROS</h3>
+<p>El programa incluye el runtime de Microsoft .NET, el runtime de Microsoft Visual C++, whisper.cpp con el modelo de voz Whisper y otras bibliotecas, cuyos textos de licencia viajan con el programa en la carpeta «licenze». Ninguno de estos componentes introduce telemetría en este producto.</p>
+<h3>RESPONSABLE Y CONTACTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="fr" lang="fr">
+<h2>POLITIQUE DE CONFIDENTIALITÉ</h2>
+<p class="versione">IApet — version 1.0.0</p>
+<p>IApet ne collecte ni ne conserve de données personnelles pour le compte du Responsable, et ne lui en envoie aucune. Il ne contient aucune télémétrie, ne suit pas l'utilisation, ne demande pas de compte, n'affiche pas de publicité et ne communique avec aucun serveur du Responsable, dans aucune configuration.</p>
+<h3>CE QUI SORT DE TON ORDINATEUR</h3>
+<p>Deux choses seulement, et toutes les deux uniquement quand tu les demandes :</p>
+<ul>
+<li>La vérification d'un mot de passe dans les listes de mots de passe volés. Le mot de passe ne sort pas : le programme en calcule l'empreinte SHA-1 et n'envoie au service Pwned Passwords (api.pwnedpasswords.com) que les 5 premiers caractères hexadécimaux, un fragment commun à des centaines de mots de passe différents. La comparaison avec les réponses se fait sur ton ordinateur.</li>
+<li>La mesure de la vitesse de la connexion avec speed.cloudflare.com : on télécharge et on envoie des données de remplissage, sans aucun contenu à toi et sans identifiant.</li>
+</ul>
+<p>Qui reçoit ces requêtes voit ce qu'il voit dans toute requête web (l'adresse IP de ta connexion et l'heure) ; ce qu'il en fait relève de sa propre politique de confidentialité. Les liens du menu Aide et de la fenêtre À propos ouvrent des pages web dans ton navigateur, seulement quand tu cliques : le programme n'y ajoute rien qui te concerne.</p>
+<h3>CE QUI RESTE SUR TON ORDINATEUR</h3>
+<p>Tout le reste. Le programme observe le bureau (les noms et la position des icônes), les fenêtres et les réglages de sécurité du système — démarrage automatique, mises à jour, réseau sans fil, processus — et, seulement quand tu le demandes, le presse-papiers, l'adresse de la page que tu as devant toi et les fichiers du dossier de travail que tu choisis. Ce qu'il apprend, tes notes, les réveils, les actions autorisées et les paramètres sont conservés dans %LOCALAPPDATA%\IApet (dans la version du Microsoft Store, dans le dossier du paquet) ; le journal quotidien est gardé 14 jours. Le micro est éteint tant que tu n'actives pas l'écoute dans le menu, et même alors il ne s'ouvre que tant que tu maintiens Ctrl+Alt+V (ou le bouton du micro dans la bulle) ; la parole est transformée en texte sur ton ordinateur, et aucun son n'est enregistré ni envoyé. Tu peux voir ce qu'il a enregistré (« Mémoire &gt; Voir ce qu'il a enregistré… »), l'exporter et l'effacer à tout moment.</p>
+<h3>LE MODÈLE DE LANGAGE</h3>
+<p>Pour discuter, IApet utilise un modèle d'intelligence artificielle qui fonctionne dans LM Studio, un programme tiers que tu choisis et installes toi-même. Il se trouve normalement sur le même ordinateur, et alors les questions, le contexte (par exemple les noms des icônes ou les passages des documents que tu lui demandes de lire) et les réponses ne quittent pas la machine. Si tu choisis d'utiliser un modèle sur un autre ordinateur de ton réseau, ces textes voyagent vers cet ordinateur, qui est le tien : le programme ne les envoie nulle part ailleurs. Ce que fait LM Studio relève de ses propres conditions.</p>
+<h3>ACHAT SUR LE MICROSOFT STORE</h3>
+<p>Si tu as acheté IApet sur le Microsoft Store, les données d'achat et de paiement sont traitées par Microsoft selon sa propre politique de confidentialité. Le Responsable ne les reçoit pas.</p>
+<h3>COMPOSANTS TIERS</h3>
+<p>Le programme inclut le runtime Microsoft .NET, le runtime Microsoft Visual C++, whisper.cpp avec le modèle vocal Whisper et d'autres bibliothèques, dont les textes de licence accompagnent le programme dans le dossier « licenze ». Aucun de ces composants n'introduit de télémétrie dans ce produit.</p>
+<h3>RESPONSABLE ET CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="de" lang="de">
+<h2>DATENSCHUTZERKLÄRUNG</h2>
+<p class="versione">IApet — Version 1.0.0</p>
+<p>IApet erhebt und speichert keine personenbezogenen Daten für den Verantwortlichen und sendet ihm keine. Es enthält keine Telemetrie, verfolgt die Nutzung nicht, verlangt kein Konto, zeigt keine Werbung und kommuniziert in keiner Konfiguration mit einem Server des Verantwortlichen.</p>
+<h3>WAS DEINEN COMPUTER VERLÄSST</h3>
+<p>Nur zwei Dinge, und beide nur, wenn du sie anforderst:</p>
+<ul>
+<li>Die Prüfung eines Passworts gegen Listen gestohlener Passwörter. Das Passwort verlässt den Computer nicht: Das Programm berechnet seinen SHA-1-Fingerabdruck und sendet dem Dienst Pwned Passwords (api.pwnedpasswords.com) nur die ersten 5 Hexadezimalzeichen, ein Bruchstück, das hunderte verschiedene Passwörter gemeinsam haben. Der Abgleich mit den Antworten erfolgt auf deinem Computer.</li>
+<li>Die Messung der Verbindungsgeschwindigkeit gegen speed.cloudflare.com: Es werden Fülldaten herunter- und hochgeladen, ohne Inhalte von dir und ohne Kennungen.</li>
+</ul>
+<p>Wer diese Anfragen erhält, sieht, was bei jeder Webanfrage sichtbar ist (die IP-Adresse deiner Verbindung und die Uhrzeit); für die weitere Verwendung gilt dessen eigene Datenschutzerklärung. Die Links im Menü Hilfe und im Fenster Über öffnen Webseiten in deinem Browser, nur wenn du klickst: Das Programm fügt ihnen nichts über dich hinzu.</p>
+<h3>WAS AUF DEINEM COMPUTER BLEIBT</h3>
+<p>Alles andere. Das Programm beobachtet den Desktop (Namen und Position der Symbole), die Fenster und die Sicherheitseinstellungen des Systems — Autostart, Updates, WLAN, Prozesse — und, nur wenn du es verlangst, die Zwischenablage, die Adresse der Seite vor dir und die Dateien im gewählten Arbeitsordner. Was es lernt, deine Notizen, Wecker, genehmigte Aktionen und Einstellungen liegen in %LOCALAPPDATA%\IApet (in der Microsoft-Store-Version im Paketordner); das tägliche Protokoll wird 14 Tage aufbewahrt. Das Mikrofon ist aus, bis du das Zuhören im Menü einschaltest, und auch dann öffnet es sich nur, solange du Strg+Alt+V (oder den Mikrofonknopf in der Sprechblase) gedrückt hältst; die Sprache wird auf deinem Computer in Text umgewandelt, und es wird kein Ton aufgenommen oder gesendet. Du kannst jederzeit ansehen, was gespeichert wurde („Gedächtnis &gt; Ansehen, was er gespeichert hat…"), es exportieren und löschen.</p>
+<h3>DAS SPRACHMODELL</h3>
+<p>Für Gespräche nutzt IApet ein KI-Modell, das in LM Studio läuft, einem Programm eines Drittanbieters, das du selbst wählst und installierst. Normalerweise läuft es auf demselben Computer, und dann verlassen Fragen, Kontext (etwa Symbolnamen oder Abschnitte der Dokumente, die es lesen soll) und Antworten das Gerät nicht. Wenn du ein Modell auf einem anderen Computer in deinem Netz nutzt, gehen diese Texte an diesen Computer, der dir gehört: Das Programm sendet sie nirgendwo sonst hin. Für LM Studio gelten dessen eigene Bedingungen.</p>
+<h3>KAUF IM MICROSOFT STORE</h3>
+<p>Wenn du IApet im Microsoft Store gekauft hast, verarbeitet Microsoft die Kauf- und Zahlungsdaten nach seiner eigenen Datenschutzerklärung. Der Verantwortliche erhält sie nicht.</p>
+<h3>KOMPONENTEN VON DRITTANBIETERN</h3>
+<p>Das Programm enthält die Microsoft-.NET-Laufzeit, die Microsoft-Visual-C++-Laufzeit, whisper.cpp mit dem Sprachmodell Whisper und weitere Bibliotheken, deren Lizenztexte im Ordner „licenze" mit dem Programm geliefert werden. Keine dieser Komponenten bringt Telemetrie in dieses Produkt.</p>
+<h3>VERANTWORTLICHER UND KONTAKT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="zh" lang="zh-Hans">
+<h2>隐私政策</h2>
+<p class="versione">IApet — 版本 1.0.0</p>
+<p>IApet 不代表控制者收集或保存任何个人数据，也不会向其发送任何数据。它不含遥测，不跟踪使用情况，不需要账户，不显示广告，在任何配置下都不会与控制者的任何服务器通信。</p>
+<h3>哪些内容会离开你的电脑</h3>
+<p>只有两样，而且都只在你要求时才会发生：</p>
+<ul>
+<li>用被盗密码列表检查一个密码。密码本身不会外传：程序计算它的 SHA-1 指纹，只把前 5 个十六进制字符发送给 Pwned Passwords 服务（api.pwnedpasswords.com），这个片段是成百上千个不同密码共有的。与返回结果的比对在你的电脑上完成。</li>
+<li>通过 speed.cloudflare.com 测量网速：下载和上传的都是填充数据，不含你的任何内容，也没有任何标识符。</li>
+</ul>
+<p>接收这些请求的一方能看到任何网络请求都会看到的内容（你的网络 IP 地址和时间）；对这些信息的处理适用其自身的隐私政策。「帮助」菜单和「关于」窗口中的链接只在你点击时才会在浏览器中打开网页：程序不会在其中添加任何与你有关的信息。</p>
+<h3>哪些内容留在你的电脑上</h3>
+<p>其他一切。程序会观察桌面（图标的名称和位置）、窗口以及系统的安全设置——开机启动项、更新、无线网络、进程——并且只在你要求时，读取剪贴板、你面前页面的地址以及你所选工作文件夹中的文件。它学到的东西、你的笔记、闹钟、经你授权的操作以及设置保存在 %LOCALAPPDATA%\IApet（Microsoft Store 版本中位于应用包的文件夹内）；每日日志保留 14 天。在你从菜单中开启聆听之前，麦克风一直是关闭的；即使开启，也只在你按住 Ctrl+Alt+V（或对话气泡中的麦克风按钮）时才会打开。语音在你的电脑上转成文字，不会录制或发送任何音频。你可以随时查看它保存的内容（「记忆 &gt; 查看它保存的内容…」）、导出或删除。</p>
+<h3>语言模型</h3>
+<p>为了对话，IApet 使用在 LM Studio 中运行的人工智能模型，LM Studio 是由你自己选择和安装的第三方程序。它通常在同一台电脑上运行，这时问题、上下文（例如图标名称，或你让它阅读的文档段落）和回答都不会离开这台机器。如果你选择使用家庭网络中另一台电脑上的模型，这些文字会传到那台属于你的电脑：程序不会把它们发送到其他任何地方。LM Studio 的行为适用其自身的条款。</p>
+<h3>在 Microsoft Store 购买</h3>
+<p>如果你是在 Microsoft Store 购买的 IApet，购买和付款数据由 Microsoft 按照其自身的隐私政策处理。控制者不会收到这些数据。</p>
+<h3>第三方组件</h3>
+<p>本程序包含 Microsoft .NET 运行时、Microsoft Visual C++ 运行时、带 Whisper 语音模型的 whisper.cpp 以及其他库，它们的许可文本随程序一起放在「licenze」文件夹中。这些组件都不会给本产品带来遥测。</p>
+<h3>控制者与联系方式</h3>
+<p>Rosario Viscardi（Vis-K）— <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+</main>
+</body>
+</html>
